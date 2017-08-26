@@ -1,0 +1,90 @@
+workout {
+	border: 1px solid green;
+	border-radius: 10px;
+	background-color: antiquewhite;
+	display: block;
+	width: 90%;
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+w_name {
+	display: block;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: xx-large;
+	color: maroon;
+}
+
+w_instruction {
+	display: block;
+	border-bottom: 1px solid grey;
+	margin: 12px 10px 10px 10px;
+	font-family: sans-serif;
+	padding: 5px;
+}
+
+.numbers {
+	margin-left: auto;
+	margin-right: auto;
+	width: 315px;
+	height: 105px;
+}
+
+w_reps {
+	color: maroon;
+	font-size: 36pt;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+w_reps:after {
+	content: "REPS";
+	display: block;
+	text-align: center;
+	font-size: 12pt;
+}
+
+w_sets {
+	color: maroon;
+	font-size: 36pt;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	
+}
+
+w_sets:after {
+	content: "SETS";
+	display: block;
+	text-align: center;
+	font-size: 12pt;
+}
+
+w_rest:before {
+	content: "REST";
+	display: block;
+	text-align: center;
+	font-size: 12pt;
+}
+
+w_rest {
+	color: maroon;
+	font-size: 36pt;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+w_rest:after {
+	content: "SECONDS";
+	display: block;
+	text-align: center;
+	font-size: 12pt;
+}
+

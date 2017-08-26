@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="phone.css" rel="stylesheet" type="text/css" media='all'>
+		<title>Workout Tracker- -Mobile</title>
+		<script language="javascript">
+			function toggleInstructions(exercise) {
+				var current = document.getElementById(exercise);
+				var instructions = current.getElementsByClassName("w_instruction");
+				if (instructions[0].style.display == "none") {
+					for (var i=0;i<instructions.length; i++) {
+						instructions[i].style.display = "block";
+					}
+				} else {
+					for (var i=0;i<instructions.length; i++) {
+						instructions[i].style.display = "none";
+					}
+				}
+			}
+			
+			function showSet(exercise,setNumber) {
+				var current = document.getElementById(exercise);
+				var sets = current.getElementsByClassName("set");
+				sets[setNumber-1].style.display = "block";
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="header">
+		</div>
+		
+		<div id="content">
+			<div class="workout" id="user_1">
+				<div class="exercise" id="squats">
+					<div class="w_name" onclick="toggleInstructions('squats');">Barbell Squat</div>
+					<button onclick="showSet('squats',1)" class="startButton">Start</button>
+					<div class="w_instruction">This is what instructions look like</div>
+					<div class="w_instruction">This is more than one line of instructions. here are more instructions, followed by some more. Text this long wraps automatically! Isn't it amazing?</div>
+					<div class="w_instruction">A third line of instructions</div>
+					<div class="numbers">
+						<div class="w_reps">3</div>
+						<div class="w_rest">50</div>
+						<div class="w_sets">10</div>
+					</div>
+					<div class="set" id="user_1_squat_1">
+						Weight for set 1: [-] 100 lbs [+]
+						<button onclick="showSet('squats',2)" class="setButton">Done with set</button>
+					</div>
+					<div class="set" id="user_1_squat_2">
+						Weight for set 2: [-] 100 lbs [+]
+						<button onclick="showSet('squats',3)" class="setButton">Done with set</button>
+					</div>
+					<div class="set" id="user_1_squat_3">
+						Weight for set 3: [-] 100 lbs [+]
+					</div>
+				</div>
+				
+				<div class="exercise" id="benchpress">
+					<div class="w_name" onclick="toggleInstructions('benchpress');">Bench Press</div>
+					<button onclick="showSet('benchpress',1)" class="startButton">Start</button>
+					<div class="w_instruction">This is what instructions look like</div>
+					<div class="w_instruction">This is more than one line of instructions. here are more instructions, followed by some more. Text this long wraps automatically! Isn't it amazing?</div>
+					<div class="w_instruction">A third line of instructions</div>
+					<div class="numbers">
+						<div class="w_reps">3</div>
+						<div class="w_rest">50</div>
+						<div class="w_sets">10</div>
+					</div>
+					<div class="set" id="user_1_benchpress_1">
+						Weight for set 1: [-] 100 lbs [+]
+						<button onclick="showSet('benchpress',1)" class="setButton">Done with set</button>
+					</div>
+					<div class="set" id="user_1_benchpress_2">
+						Weight for set 2: [-] 100 lbs [+]
+						<button onclick="showSet('benchpress',1)" class="setButton">Done with set</button>
+					</div>
+					<div class="set" id="user_1_benchpress_3">
+						Weight for set 3: [-] 100 lbs [+]
+					</div>
+				</div>
+				
+				<div class="exercise" id="standingpulldown">
+					<div class="w_name" onclick="toggleInstructions('standingpulldown');">Standing Pulldown</div>
+					<button onclick="showSet('standingpulldown',1)" class="startButton">Start</button>
+					<div class="w_instruction">This is what instructions look like</div>
+					<div class="w_instruction">This is more than one line of instructions. here are more instructions, followed by some more. Text this long wraps automatically! Isn't it amazing?</div>
+					<div class="w_instruction">A third line of instructions</div>
+					<div class="numbers">
+						<div class="w_reps">3</div>
+						<div class="w_rest">50</div>
+						<div class="w_sets">10</div>
+					</div>
+					<div class="set" id="user_1_standingpulldown_1">
+						Weight for set 1: [-] 100 lbs [+]
+						<button onclick="showSet('standingpulldown',2)" class="setButton">Done with set</button>
+					</div>
+					<div class="set" id="user_1_standingpulldown_2">
+						Weight for set 2: [-] 100 lbs [+]
+						<button onclick="showSet('standingpulldown',3)" class="setButton">Done with set</button>
+					</div>
+					<div class="set" id="user_1_standingpulldown_3">
+						Weight for set 3: [-] 100 lbs [+]
+					</div>
+				</div>
+				
+			</workout>			
+		</div>
+		
+		<div id="navigation">
+		</div>
+		
+		<div id="footer">
+		</div>
+	</body>
+</html>
